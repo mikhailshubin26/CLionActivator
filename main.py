@@ -19,7 +19,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 textAreaList = [textAreaElement.get_text() for textAreaElement in soup.find_all("textarea")]
 code = textAreaList[1][1::]
 pyperclip.copy(code)
-print('Код активации скопорван в буфер обмена!\n')
+print('Код активации скопирван в буфер обмена!\n')
 print('Поддержать разработчика:\nBTC: 1JdA7pxnhjCisvXmUVArGP1vtiuCXrkeap\nUSDT TRC20: TYVhUdq6UemAGcPNaQkDn8A7UMTqV8jvHP\nTON: UQCb1uo-8iJ-2mlIpVj8nV-7JpafJPSwAk7qeQWgbut2wfx9\n')
 exit = input('Нажмите Enter, чтобы выйти')
 
